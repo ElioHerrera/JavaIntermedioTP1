@@ -75,7 +75,7 @@ class Alumno {
                     + "\n--------------------------------------");
         } else { //Si "puedeIncribirse()" es "false" no inscribe
 
-            System.out.println("El alumno " + this.nombreMateria + " No se puede incribir a la materia " + materia.getNombre()
+            System.out.println("El alumno " + this.nombreMateria + " No se puede inscribir a la materia " + materia.getNombre()
                     + "\n--------------------------------------");
         }
     }
@@ -84,7 +84,7 @@ class Alumno {
     public void aprobarMateria(Materias materia) {
 
         for (Inscripcion inscripcion : this.inscripciones) {
-            //Si la materia existe en la lista de incripciones agrega la materia a la lista de aprobadas
+            //Si la materia existe en la lista de inscripciones agrega la materia a la lista de aprobadas
             if (inscripcion.getMateria().equals(materia)) {
                 inscripcion.getAlumno().getMateriasAprobadas().add(materia);
 
